@@ -13,34 +13,36 @@
 <body>
     
     <div class="calculadora">
-        <input type="text" id="visor" class="visor" />
+        <input type="text" id="visor" class="visor" disabled/>
         <div class="teclado">
-          <button class="tecla" id="btn7">7</button>
-          <button class="tecla" id="btn8">8</button>
-          <button class="tecla" id="btn9">9</button>
-          <button class="tecla operacao" id="btnDividir">/</button>
+          <button onclick="getClick(this)" class="tecla" id="btn7">7</button>
+          <button onclick="getClick(this)" class="tecla" id="btn8">8</button>
+          <button onclick="getClick(this)" class="tecla" id="btn9">9</button>
+          <button onclick="getClick(this)" class="tecla operacao" id="btnDividir">/</button>
     
-          <button class="tecla" id="btn4">4</button>
-          <button class="tecla" id="btn5">5</button>
-          <button class="tecla" id="btn6">6</button>
-          <button class="tecla operacao" id="btnMultiplicar">*</button>
+          <button onclick="getClick(this)" class="tecla" id="btn4">4</button>
+          <button onclick="getClick(this)" class="tecla" id="btn5">5</button>
+          <button onclick="getClick(this)" class="tecla" id="btn6">6</button>
+          <button onclick="getClick(this)" class="tecla operacao" id="btnMultiplicar">*</button>
     
-          <button class="tecla" id="btn1">1</button>
-          <button class="tecla" id="btn2">2</button>
-          <button class="tecla" id="btn3">3</button>
-          <button class="tecla operacao" id="btnSubtrair">-</button>
+          <button onclick="getClick(this)" class="tecla" id="btn1">1</button>
+          <button onclick="getClick(this)" class="tecla" id="btn2">2</button>
+          <button onclick="getClick(this)" class="tecla" id="btn3">3</button>
+          <button onclick="getClick(this)" class="tecla operacao" id="btnSubtrair">-</button>
     
-          <button class="tecla" id="btn0">0</button>
-          <button class="tecla" id="btnPonto">.</button>
-          <button class="tecla" id="btnPorcentagem">%</button>
-          <button class="tecla operacao" id="btnSomar">+</button>
+          <button onclick="getClick(this)" class="tecla" id="btn0">0</button>
+          <button onclick="getClick(this)" class="tecla" id="btnPonto">.</button>
+          <button onclick="porcentagem()" class="tecla" id="btnPorcentagem">%</button>
+          <button onclick="getClick(this)" class="tecla operacao" id="btnSomar">+</button>
     
-          <button class="tecla" id="btnPotencia">x²</button>
-          <button class="tecla" id="btnRaiz">√</button>
-          <button class="tecla" id="btnLimparTudo">C</button>
-          <button class="tecla" id="btnLimpar">CE</button>
+          <button onclick="potencia()" class="tecla" id="btnPotencia">x²</button>
+          <button onclick="raizQuadrada()" class="tecla" id="btnRaiz">√</button>
+          <button onclick="clearInput()" class="tecla" id="btnLimparTudo">C</button>
+          <button onclick="deleteValueOfIndex()" class="tecla" id="btnLimpar">CE</button>
+          
+          <button onclick="result()" class="tecla" id="btnResultado">=</button>
         </div>
-      </div>
+    </div>
 
 </body>
 </html>
